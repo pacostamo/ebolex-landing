@@ -632,6 +632,56 @@ img{ max-width: 100%; display: block; }
 }
 .footer__copy{ margin: 0; color: rgba(255,255,255,0.60); font-weight: 650; font-size: 0.92rem; }
 
+/* Footer links + social */
+.footer__link{
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social{
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social{
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+
+  transition: transform .18s var(--ease), background .18s var(--ease), border-color .18s var(--ease);
+}
+
+.social svg{
+  width: 18px;
+  height: 18px;
+  fill: rgba(255,255,255,0.80);
+}
+
+.social:hover{
+  transform: translateY(-1px);
+  border-color: rgba(0,255,247,0.25);
+  background: rgba(0,255,247,0.06);
+}
+
+.social:focus-visible{
+  outline: 2px solid rgba(0,255,247,0.55);
+  outline-offset: 3px;
+}
+
+
 /* --------- Responsive (>= 860px) --------- */
 @media (min-width: 860px){
   .nav{ display: flex; }
@@ -660,3 +710,4 @@ img{ max-width: 100%; display: block; }
   .glass-card{ animation: none; }
   .btn, .card{ transition: none; }
 }
+
